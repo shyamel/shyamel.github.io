@@ -1,8 +1,55 @@
-<title>
-Workout Wars
-</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workout Wars - Fitness Competition App</title>
+    <!-- You can add CSS link or internal styles here -->
+    <style>
+        /* Your CSS styles go here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Workout Wars - Fitness Competition App</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <!-- Your home page content goes here -->
+        </section>
 
-<p>
-Contact us at workoutwars@gmail.com
-</p>
+        <section id="about">
+            <h2>About</h2>
+            <!-- Your about page content goes here -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="/submit-contact" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Workout Wars - Fitness Competition App</p>
+    </footer>
+</body>
+</html>
